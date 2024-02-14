@@ -5,39 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .navbar {
-            background-color: black;
-            display: flex;
-            justify-content: space-between;
-        }
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
-        .img {
-            width: 150px; /* Fixed width for better control */
-        }
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(128, 128, 128, 0.863);
+    z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
+    }
 
-        .img>img {
-            height: 50px;
-        }
+.mainbtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px; /* Adjust the margin as needed */
+    display: flex;
+    gap: 30px;
+    padding-right: 10px;
+    z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
+}
+.img {
+     width: 150px; /* Fixed width for better control */
+    }
 
-        .btn {
-            color: white;
+.img>img {
+    height: 50px;
+    padding-left: 10px;
         }
+.btn {
+     color: white;
+    }
 
-        .btn>p, a {
+.btn>p, a {
             color: white;
             cursor: pointer;
             text-decoration: none;
         }
 
-        .mainbtn {
+        /* .mainbtn {
             display: flex;
             gap: 30px;
-        }
+            padding-right: 10px;
+            
+        } */
 
         .logo {
             width: 100%;
             height: 300px;
-        }
+         }
 
         .text {
             width: 70%;
@@ -52,20 +73,93 @@
             font-size: 20px;
         }
 
-        #content2 {
+        .content {
             display: flex;
             justify-content: space-between;
+            
         }
-    </style>
+        .nav{
+            /* border: 2px solid aqua;
+            background-image: url("https://app.twiik.me/images/startpage.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            height: 400px;
+            background-attachment: fixed;
+            padding: 75px 0px 50px; */
+            background: #000 url('https://app.twiik.me/images/startpage.jpg') no-repeat center center; 
+            background-size: cover; background-attachment: fixed; padding: 20px 0px 20px; z-index: 1;
+        
+        }
+        
+        .btn1{
+            
+             background-image: linear-gradient(to right,#5a3bdb,#75c6ec);
+             padding: 5px;
+             margin: 0;
+             height: 30px;
+             border-radius: 15px;
+        }
+        .con1{
+            
+            display: flex;
+           justify-content: center;
+            flex-direction:column ;
+            padding: 10px;
+            margin: auto;
+            
+        }
+        #image2{
+            display: flex;
+         justify-content: space-between;
+
+        }
+        .image{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding-right: 10px;
+        }
+        .content1 {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .con2{
+            
+            display: flex;
+           justify-content: center;
+            flex-direction:column ;
+            padding: 10px;
+            margin: auto;
+        }
+        #image3{
+            display: flex;
+         justify-content: space-between;
+        }
+        .imge{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding-right: 70px;
+        }
+        .checkmark{
+            color: #5a3bdb;
+        }
+</style>
 </head>
 <body>
+    <div class="nav">
     <div class="navbar">
-        <div class="img"><img src="https://kcdn.twiikapp.com/images/logo.png" alt=""></div>
+        <div class="img"><img style="height: 50px;" src="https://kcdn.twiikapp.com/images/logo.png" alt=""></div>
         <div class="mainbtn">
             <div class="btn"><p><a href="">Get the app </a></p></div>
             <div class="btn"><p><a href="conatct.html">Contact</a></p></div>
             <div class="btn"><p><a href="login.html">Login</a></p></div>
-            <div class="btn"><p><a href="signup.html">Create account</a></p></div>
+
+            <div class="btn1"><a class="btnc" href="signup.html"><p>Create Account</p></a></div>
         </div>
     </div>
 
@@ -76,31 +170,49 @@
            <p>As a member you can log your workouts in your workout log directly in the app. Follow your results, get individual results, <br> personal coaching and statistics.</p>
         </div>
     </div>
+</div>
         
-    <div id="content2">
+
         <div class="content">
+        <div class="con1"> 
             <h1 style="text-align: center;">What is Twiik?</h1>
-            <p style="text-align: center;">Twiik App is a digital fitness log and coach that's always with you. As a <br>member you can log your workouts, track results, follow programs,<br> boost and challenge friends and join social groups for motivation.</p>
+            <br>
+            <p style="text-align: center;font-size: 1em;">Twiik App is a digital fitness log and coach that's always with you. As a <br>member you can log your workouts, track results, follow programs,<br> boost and challenge friends and join social groups for motivation.</p>
+        </div>
+            <div class="mobile_image"><img style="height: 600px;width: 500px;"  src="https://kcdn.twiikapp.com/images/startpage_twiik_app.png" alt="Twiik App"></div>
         </div>
 
-        <div class="startpage_block image_right">
-            <div class="mobile_image"><img src="https://kcdn.twiikapp.com/images/startpage_twiik_app.png" alt="Twiik App"></div>
-            <div style="text-align: center;"><img src="https://s0.2mdn.net/simgad/15183391706040042790" alt=""></div><br>
+           
         </div>
-
+        
         <div id="image2">
             <div class="image1"><img src="https://kcdn.twiikapp.com/images/startpage_stats.png" alt="Workout Stats"></div>
             <div class="image">
                 <h2>KEEP TRACK OF YOUR HABITS WITH OUR<br> WORKOUT LOG</h2>
+                <br>
                 <ul>
-                    <li>Your own digital fitness log</li>
-                    <li>Log all types of activities</li>
-                    <li>Follow your results and keep track of your progress and habits</li>
+                    <p class="checkmark"> &#x2713;Your own digital fitness log</p>
+                    <p class="checkmark">&#x2713;Log all types of activities</p>
+                    <p class="checkmark">&#x2713;Follow your results and keep track of your progress and habits</p>
                 </ul>
-                
-                <p id="demo"></p>
             </div>
         </div>
-    </div>
+        <div class="content1">
+            <div class="con2"> 
+                <h2 style="text-align: center;">WORKOUTS PROGRAMS & COACHING</h2>
+                <br>
+                <p style="text-align: center;font-size: 0.9em;">With The Twiik app you can easily find lots of workout programs to <br>follow. Find the program that suits your needs.</p>
+            </div>
+                <div class="mobile_image"><img style="height: 500px;width: 400px;"  src="https://twiik.b-cdn.net/images/startpage_coach.png" alt="App"></div>
+            </div>
+            <div id="image3">
+                <div class="image0"><img style="height: 500px;width: 450px;" src="https://twiik.b-cdn.net/images/startpage_stream.jpg" alt="Workout Stats"></div>
+                <div class="imge">
+                    <h2 style="text-align: center;">CHALLENGE & BOOST</h2>
+                    <br>
+                    <p style="text-align: center;font-size: 0.9em;">Add and follow your friends. Boost and write comments on each others<br> workouts. Why not create a challenge to create that extra bit of <br>motivation. Create social groups where you can chat and share info.</p>
+                </div>
+            </div>
+            
 </body>
 </html>
